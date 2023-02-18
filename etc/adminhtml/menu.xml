@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Deloitte_InventoryUpdate::inventorytitle" title="Inventory" module="Deloitte_InventoryUpdate"
+             sortOrder="20" parent="Deloitte_Base::base" resource="Deloitte_InventoryUpdate::inventoryupdate"/>
+        <add id="Deloitte_InventoryUpdate::importexport" title="Export Inventory" module="Deloitte_InventoryUpdate"
+             sortOrder="30" parent="Deloitte_InventoryUpdate::inventorytitle" action="adminhtml/inventoryexport"
+             resource="Deloitte_InventoryUpdate::inventoryupdate"/>
+        <add id="Deloitte_InventoryUpdate::import" title="Import Inventory" module="Deloitte_InventoryUpdate"
+             sortOrder="40" parent="Deloitte_InventoryUpdate::inventorytitle" action="adminhtml/inventoryimport"
+             resource="Deloitte_InventoryUpdate::inventoryupdate"/>
+    </menu>
+</config>
